@@ -102,9 +102,8 @@ public class BotConfig
             boolean write = false;
 
             // validate bot token
-            if(token==null || token.isEmpty() || token.equalsIgnoreCase("BOT_TOKEN_HERE"))
-            {
-                token = prompt.prompt("Please provide a bot token."
+            if(token==null || token.isEmpty() || token.equalsIgnoreCase("NzU5NzE0NjM2ODc4MTg0NDQ5.X3BhZA.fZ2vu-Od7bOz8O5n-vKrwZuZmUc"))
+            {= prompt.prompt("Please provide a bot token."
                         + "\nInstructions for obtaining a token can be found here:"
                         + "\nhttps://github.com/jagrosh/MusicBot/wiki/Getting-a-Bot-Token."
                         + "\nBot Token: ");
@@ -168,7 +167,7 @@ public class BotConfig
         else
         {
             bytes = original.substring(original.indexOf(START_TOKEN)+START_TOKEN.length(), original.indexOf(END_TOKEN))
-                .replace("BOT_TOKEN_HERE", token)
+                .replace("NzU5NzE0NjM2ODc4MTg0NDQ5.X3BhZA.fZ2vu-Od7bOz8O5n-vKrwZuZmUc", token)
                 .replace("0 // OWNER ID", Long.toString(owner))
                 .trim().getBytes();
         }
